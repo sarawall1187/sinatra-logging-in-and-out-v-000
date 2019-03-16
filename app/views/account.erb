@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
   </head>
   <body id="page-top">
+      <% binding.pry %>
     <% if @user.is_logged_in? %>
     <h1><%= @user.current_user.username %></h1>
     <!-- <h1><%= @user.current_user.email %></h1> -->
