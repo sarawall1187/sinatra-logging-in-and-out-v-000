@@ -29,7 +29,6 @@ class ApplicationController < Sinatra::Base
 
   get '/account' do
   #  binding.pry
-
    if session[:user_id]
      erb :account
     else
