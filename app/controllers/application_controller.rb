@@ -32,7 +32,7 @@ class ApplicationController < Sinatra::Base
      binding.pry
     if @user.is_logged_in?
      erb :account
-      
+
     else
      erb :error
    end
