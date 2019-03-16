@@ -29,10 +29,8 @@ class ApplicationController < Sinatra::Base
   get '/account' do
    binding.pry
     @user = User.current_user
-
-    if @user.is_logged_in?
+   if @user.is_logged_in?
      erb :account
-
     else
      erb :error
    end
